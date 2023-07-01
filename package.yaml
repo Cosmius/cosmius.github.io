@@ -1,0 +1,21 @@
+name: mysite
+version: "0.1.0.0"
+extra-source-files:
+  - README.md
+executables:
+  mysite:
+    main: site.hs
+    dependencies:
+      - base >= 4.7 && < 5
+      - hakyll
+    ghc-options:
+      - -Wall
+      - -Wcompat
+      - -Widentities
+      - -Wincomplete-record-updates
+      - -Wincomplete-uni-patterns
+      - -Wmissing-export-lists
+      - -Wmissing-home-modules
+      - -Wpartial-fields
+      - -Wredundant-constraints
+      - -threaded
